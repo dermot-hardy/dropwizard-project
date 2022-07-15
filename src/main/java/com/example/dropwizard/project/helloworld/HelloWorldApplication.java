@@ -96,7 +96,7 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration>
     private KeycloakConfig getConfig()
     {
         KeycloakConfig config = new KeycloakConfig();
-        config.setAuthServerUrl("http://localhost:8081");
+        config.setAuthServerUrl("http://localhost:8080/auth");
         config.setSecret("34f37982-733c-49ed-a840-11166f044ef8");
         config.setPassword("password");
         config.setRealm("dev");

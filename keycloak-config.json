@@ -1,6 +1,6 @@
 {
   "realm": "dev",
-  "auth-server-url": "http://localhost:8082/auth/",
+  "auth-server-url": "http://localhost:8080/auth/",
   "ssl-required": "external",
   "resource": "dropwizard-project",
   "verify-token-audience": true,

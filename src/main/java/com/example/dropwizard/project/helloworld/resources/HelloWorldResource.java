@@ -35,7 +35,7 @@ public class HelloWorldResource
     public Saying sayHello(@Context final HttpServletRequest request, @QueryParam("name") Optional<String> name) {
         System.out.println("TEST");
         final String value = String.format(template, name.orElse(defaultName));
-//        AuthorizeUser au = new AuthorizeUser("http://localhost:8081");
+//        AuthorizeUser au = new AuthorizeUser("http://localhost:8080");
 //        au.authoriseUser(request.getHeader("Authorization").toLowerCase());
 //        System.out.println("REQUEST: " + request.getHeader("Authorization").toLowerCase());
         return new Saying(counter.incrementAndGet(), value);

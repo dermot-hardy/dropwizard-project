@@ -57,7 +57,7 @@ public class KeycloakResolver implements KeycloakConfigResolver
     private KeycloakConfig getConfig()
     {
         KeycloakConfig config = new KeycloakConfig();
-        config.setAuthServerUrl("http://localhost:8082/auth");
+        config.setAuthServerUrl("http://localhost:8080/auth");
         config.setSecret("eca94c43-37d0-4845-ba94-3ecdeda18901");
         config.setPassword("password");
         config.setRealm("dev");

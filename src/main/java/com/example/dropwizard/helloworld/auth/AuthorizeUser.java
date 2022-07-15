@@ -30,7 +30,7 @@ public class AuthorizeUser
         Client client = ClientBuilder.newClient();
         client.register("bearer " + token);
         
-        return client.target("http://localhost:8081/auth/realms/dev/protocol/openid-connect/userinfo")
+        return client.target("http://localhost:8080/auth/realms/dev/protocol/openid-connect/userinfo")
             .request(MediaType.APPLICATION_JSON).get(UserInfo.class);
     }
     
